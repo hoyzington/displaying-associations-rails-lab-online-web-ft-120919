@@ -10,7 +10,7 @@ describe 'songs', type: :feature do
     visit songs_path
     expect(page.status_code).to eq(200)
     expect(page).to have_link('Daft Punk - The Grid', href: song_path(@song))
-  end
+  end 
 
   it "show page links to the artist show page" do
     visit song_path(@song)
